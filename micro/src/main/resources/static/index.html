@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <!--  <base href="/"> -->
+      
+    <title>BMS PORTAL</title>
+    <!-- Bootstrap -->
+    
+    <!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"> <!-- custom styles -->
+	
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+   <!--<script>
+    $(document).ready(function() {
+	        $('.login-button').on('click', function(evt){
+	        	alert("est");
+	        	$.ajax({
+	        		method: 'POST',
+	        		url: 'http://localhost:9081/Practice/LoginServlet',
+	        		success: function(response){
+	        			console.log(response);
+	        		},
+	        		data:{
+	        			user: 'yedava sodi',
+	        			pass: 'jaddi moham'
+	        		}
+	        	});
+	        	evt.preventDefault();
+	        });
+	});	
+    </script> -->
+  </head>
+  <body class="container">
+  <form class="col-md-4 col-md-offset-4 login-form" >
+  		<div id="notice-container"></div>
+      <div class="form-group">
+	    <label for="title"><h2><b>BMS PORTAL</b></h2></label>
+	  </div>  
+	  <div class="form-group">
+	    <label for="exampleInputEmail1"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span> User Name</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+  </div>
+	  <a class="btn btn-primary btn-md login-button" href="idea.html">
+	  <span class="glyphicon glyphicon-log-in"></span> <strong>Login</strong> </a>
+	  	</form>
+  </body>
+</html>

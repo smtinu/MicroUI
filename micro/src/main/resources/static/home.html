@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <!--  <base href="/"> -->
+      
+    <title>BMS PORTAL</title>
+    <!-- Bootstrap -->
+    
+    <!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link href="css/style.css" rel="stylesheet"> <!-- custom styles -->
+	
+	
+	<body class="container">
+	<table class="table">
+	<tr>
+	<td>
+	<div class="form-group">
+	<label for="searchMsisdn">MSISDN :</label>
+	 <input type="text" class="form-control" id="searchMsisdn">
+	  </div> 
+	  <button type="submit" class="btn btn-primary" onclick="search()">Search</button>
+	  </td>
+	</td>
+	<td>
+	<form class="col-md-12 col-md-offset-3">
+      <div class="form-group">
+	    <label for="title"><h3><b>Contact Details</b></h3></label>
+	  </div> 
+	  <table class="table">
+	  <tr>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="Name">Customer Name</label>
+	     <input type="text" class="form-control" id="name">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	<label for="dob">Date of Birth</label>
+	  	<input type="text" class="form-control" id="dob">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="nationality">Nationality</label>
+	  	<input type="text" class="form-control" id="nationality">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="port">Port</label>
+	  	<input type="text" class="form-control" id="port">
+	   </div></td>
+	    <td>
+	  <div class="form-group">
+	  	<label for="textMessage">Message</label>
+	  	<input type="text" class="form-control" id="textMessage">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="occupation">Occupation</label>
+	  	<input type="text" class="form-control" id="occupation">
+	   </div></td>
+	   </tr>
+	   <tr>
+	   <td>
+	  <div class="form-group">
+	  	<label for="gender">Gender</label>
+	  	<input type="text" class="form-control" id="gender">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="type">Type</label>
+	  	<input type="text" class="form-control" id="type">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="street">Street Address</label>
+	  	<input type="text" class="form-control" id="street">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="postBox">PostBox</label>
+	  	<input type="text" class="form-control" id="postBox">
+	   </div></td>
+	   </tr>
+	   <tr>
+	   <td>
+	  <div class="form-group">
+	  	<label for="email">Email Address</label>
+	  	<input type="text" class="form-control" id="email">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="mobile">Mobile Number</label>
+	  	<input type="text" class="form-control" id="mobile">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="city">City</label>
+	  	<input type="text" class="form-control" id="city">
+	   </div></td>
+	   <td>
+	  <div class="form-group">
+	  	<label for="msisdn">MSISDN</label>
+	  	<input type="text" class="form-control" id="msisdn">
+	   </div></td>
+	   </tr>
+	  </table>
+	  </form>
+	  <form class="col-md-8 col-md-offset-3">
+      <div class="form-group">
+	    <label for="title"><h3><b>Account Details</b></h3></label>
+	  </div> 
+	  <table class="table">
+	  <tr>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="msisdn">MSISDN</label>
+	     <input type="text" class="form-control" id="msisdnAccount">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="status">Status</label>
+	     <input type="text" class="form-control" id="statusAccount">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="package">Package</label>
+	     <input type="text" class="form-control" id="package">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="serviceNo">Service Acc No</label>
+	     <input type="text" class="form-control" id="serviceNo">
+	  </div> </td>
+	  </tr>
+	  <tr>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="billingNumber">BillingNumber</label>
+	     <input type="text" class="form-control" id="billingNumber">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="billPreference">Bill Preference</label>
+	     <input type="text" class="form-control" id="billPreference">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="vanity">Vanity</label>
+	     <input type="text" class="form-control" id="vanity">
+	  </div> </td>
+	  </tr>
+	  </table>
+	  </form>
+	  <form class="col-md-8 col-md-offset-3">
+      <div class="form-group">
+	    <label for="title"><h3><b>Related Account Details</b></h3></label>
+	  </div> 
+	  <table class="table">
+	  <tr>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="msisdn">MSISDN</label>
+	     <input type="text" class="form-control" id="msisdnRelated">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="package">Package</label>
+	     <input type="text" class="form-control" id="packageRelated">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="plan">Plan</label>
+	     <input type="text" class="form-control" id="planRelated">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="msisdn">Child MSISDN</label>
+	     <input type="text" class="form-control" id="childMmsisdnRelated">
+	  </div> </td>
+	  </tr>
+	  <tr>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="email">Email</label>
+	     <input type="text" class="form-control" id="emailRelated">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="status">Status</label>
+	     <input type="text" class="form-control" id="statusRelated">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="dueAmount">Bill Due Amount</label>
+	     <input type="text" class="form-control" id="dueAmount">
+	  </div> </td>
+	  <td>
+	  <div class="form-group">
+	  	 <label for="balance">Balance</label>
+	     <input type="text" class="form-control" id="balanceRelated">
+	  </div> </td>
+	  </tr>
+	  </table>
+	  </form>
+	  </td>
+	</tr>
+	</table>		
+</body>
+</html>
